@@ -1,0 +1,23 @@
+/**********************************************************************************************************************************
+				<assessment name: Workshop - #5 (Part-2)>
+Full Name  : Rahimullah Khadim Hussain
+Student ID#: 119515229
+Email      : rkhadim-hussain@myseneca.ca
+Section    :  NEE
+Date of Completion: OCT/14/2023
+
+Authenticity Declaration:
+ I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+***********************************************************************************************************************************/
+This workshop enlightens on key C++ concepts, particularly, constructors, file I/O, string manipulations, functors, and lambda expressions.
+
+Functors vs Lambda Expressions: Functors are objects with an overloaded operator(), suitable for situations where an object needs to maintain state across several calls, or requires additional setup at creation. Lambdas are anonymous inline functions, best suited for short-term usage, such as in STL algorithms, due to their simplicity and ease of use in simple operations or when the function is used in a single scope.
+
+Exception Handling in SpellChecker: The original SpellChecker constructor throws an exception for invalid filenames. An alternative would be returning a specific error code or using an error flag. The client code could then check the error status before proceeding, improving robustness without exceptions, albeit at the cost of making the client code more complex.
+
+Redundant Logic in Movie and Book: To eliminate redundancy, a base class Media could be employed, encapsulating shared logic like file loading and parsing, thereby adhering to the DRY principle.
+
+Necessity of Default Constructors: While default constructors enhance flexibility, providing safe defaults for object instantiation, they aren't strictly necessary if all instantiations are managed and known, and if always using parameterized constructors can guarantee a valid state. However, they are essential when objects are instantiated in collections.
+
+Through this exercise, encapsulation, inheritance, and robust design principles are profoundly ingrained, aiding in fostering robust C++ application design practices.
+
